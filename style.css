@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #0f0e07;
+    background: #4e6869;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabecera fija */
+#main-header {
+    background: #090f49;
+    color: rgb(196, 80, 80);
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#main-header a {
+    color: white;
+}
+
+#logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+#logo-header:hover {
+    color: #b0aba0;
+}
+
+#logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #b0aba0;
+    color: black;
+}
+
+#main-content {
+    background: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.precio {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 15px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #b0aba0;
+    color: black;
+}

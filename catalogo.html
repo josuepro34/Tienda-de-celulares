@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Catálogo - Tienda de Celulares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <a id="logo-header" href="index.html">
+            <span class="site-name">PIA - TechMobile</span>
+            <span class="site-desc">Diseño Avanzado de Páginas Web</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="inicio.html" class="active">Inicio</a></li>
+                <li><a href="index.html">¿Quiénes somos?</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content">
+        <h1>Catálogo de Precios y Productos</h1>
+        <div class="cuadricula">
+            <div class="producto">
+                <img src="Iphone-14.webp" alt="Celular 1">
+                <h3>iphone 14
+                </h3>
+                <p>Color: celeste</p>
+                <p class="precio">$6,000 MXN</p>
+                <button onclick="calcularCuota(6000)">Calcular Mensualidad</button>
+            </div>
+            <div class="producto">
+                <img src="iphone15-.png" alt="Celular 2">
+                <h3>Iphone 15</h3>
+                <p>Color: gris</p>
+                <p class="precio">$15,000 MXN</p>
+                <button onclick="calcularCuota(15000)">Calcular Mensualidad</button>
+            </div>
+            <div class="producto">
+                <img src="AirPods-Max.webp" alt="Accesorio">
+                <h3>Airpods max</h3>
+                <p>Color: negro</p>
+                <p class="precio">$12,000 MXN</p>
+                <button onclick="calcularCuota(12000)">Calcular Mensualidad</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Función matemática para calcular pagos mensuales aproximados
+        function calcularCuota(precio) {
+            let resultado = Math.round(precio / 12);
+            alert("El precio de contado es: $" + precio + "\nA 12 mensualidades fijas de aprox: $" + resultado + " por mes.");
+        }
+    </script>
+
+</body>
+</html>
